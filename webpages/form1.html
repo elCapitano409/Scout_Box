@@ -1,13 +1,10 @@
-<form onSubmit = "event.preventDefault()">
-    <label class="label">Name:</label>
+<form name = "scoutform" onSubmit="getData">
+    <input class="label">Name:</input>
     <input type = "text" name = "userName"/>
     <br/>
 
     <label>Your team:</label>
-    <select name = "userTeam">
-    	<option name = "4814">4814</option>
-    	<option name = "4617">4617</option>
-    </select>
+   
     <br/>
     <br/>
 
@@ -20,4 +17,10 @@
     <br/>
 
     <input type="submit" value="Submit">
-</form>
+</div>
+
+<script type="text/javascript">
+	function getData(){
+		document.getElementById("team").value;
+	}
+</script>>
